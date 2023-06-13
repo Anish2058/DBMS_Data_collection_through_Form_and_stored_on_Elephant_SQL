@@ -52,3 +52,23 @@ FROM tbl__Students;
 SELECT Name, Age 
 FROM tbl__Students
 WHERE Age = (SELECT MAX(Age) FROM tbl__Students);
+
+SELECT Name AS nam
+FROM tbl__Students;
+
+SELECT * FROM tbl__Students 
+WHERE age BETWEEN 21 AND 24;
+
+SELECT * FROM tbl__Students
+WHERE Name='BISHAL'; 
+
+SELECT * FROM tbl__Students
+WHERE Address LIKE  '%du';
+
+SELECT * FROM tbl__Students
+WHERE Address LIKE  'M%';
+
+UPDATE tbl__Students
+SET Name ='MANISH'
+WHERE Name='BAL';
+
