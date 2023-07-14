@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>DBMS PROJECT</title>
+    </head>
+    <style>
+        .button_t{
+            background-color: aqua;
+            color: blue;
+        }
+        .input_b{
+            background-color: darkgray;
+            color: black;
+        }
+        .feedback{
+            margin-left: 100px;
+        }
+        .rows{
+            margin-left: 100px;
+            text-size-adjust: 2xl;
+        }
+        .column{
+            float: left;
+            width:50%;
+            border-style:solid;
+            border-color:brown;
+            margin-left:20px;
+            margin-top: 20px;
+        }
+        .textform{
+            margin-left:10px;
+            margin-top: 10px;
+        }
+    </style>
+ 
+    <body>
+        <div class="column">
+        <div class="textform">
+        <div class="container">
+            <h1 class="input_b">STUDENT DETAIL FORM</h1>
+            <form action="/submit" method="post">
+                <div class="row" >
+                    <div class="cols-25">
+                        <label for="fname">FIRST NAME</label>
+                    </div> 
+                    <div class="cols">
+                        <input type="text" id="fname" name="firstname" placeholder="Max 20 character">
+                    </div>
+                </div><br>
+                <div class="row" >
+                    <div class="cols-25">
+                        <label for="lname">LAST NAME</label>
+                    </div> 
+                    <div class="cols-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Max 20 character">
+                    </div>
+                </div><br>
+                <div class="row" >
+                    <div class="cols-25">
+                        <label for="Roll">ROLL NUMBER</label>
+                    </div> 
+                    <div class="cols-75">
+                        <input type="text" id="roll" name="Roll" placeholder="THA077BEI007" Pattern="[A-Z]{3}[0-9]{3}[A-Z]{3}[0-9]{3}">
+
+                    </div>
+                </div><br>
+                <div class="row" >
+                    <div class="cols-25">
+                        <label for="address">ADDRESS</label>
+                    </div> 
+                    <div class="cols">
+                        <input type="text" id="address" name="Address" placeholder="Your Address..">
+                    </div>
+                </div><br>
+                <div class="row" >
+                    <div class="cols-25">
+                        <label for="Phone">PHONE NUMBER</label>
+                    </div> 
+                    <div class="cols-75">
+                        <input type="text" id="Phone" name="Phone_no" placeholder="10 digits" Pattern="[0-9]{10}">
+
+                    </div>
+                </div><br>
+                    <div class="rows">
+                        <input type="submit" value="Submit" class="input_b">
+                    </div>
+                    <h3 class="button_t">Thanks for submitting</h3>
+            </form>
+            
+        </div>
+        </div>
+    </div>
+    </body>
+</html>
